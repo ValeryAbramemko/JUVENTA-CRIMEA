@@ -1,0 +1,93 @@
+.subheader
+    box-shadow: 0px 3px 0px 0px #ededed
+    padding-top: 60px
+    &__inner
+        display: flex
+        justify-content: space-between
+    &__info
+        width: 295px
+        &-logo
+            max-width: 100%
+        &-official
+            margin-top: 9px
+            font-size: 12px
+            line-height: 18px
+            font-weight: 400
+            color: #6e6e6e
+
+    &__adres
+        width: 143px
+        position: relative
+        &-text
+            font-size: 14px
+            line-height: 18px
+            font-weight: 400
+            color: #000000
+            span
+                font-weight: 700
+    &__adres::before
+        content: ""
+        position: absolute
+        width: 18px
+        height: 26px
+        top: 4px
+        left: -31px
+        background-image: url(../icons/metka.png)
+    &__working
+        width: 95px
+        position: relative
+        &-text
+            font-size: 14px
+            line-height: 18px
+            font-weight: 400
+            color: #000000
+            span
+                font-weight: 700
+    &__working::before
+        content: ""
+        position: absolute
+        width: 24px
+        height: 26px
+        top: 4px
+        left: -37px
+        background-image: url(../icons/chasy.png)
+    &__call
+        width: 150px
+        position: relative
+        margin-bottom: 20px
+        &-phone
+            font-size: 18px
+            line-height: 24px
+            font-weight: 400
+            color: #000000
+            span
+                font-weight: 700
+        &-btn
+            margin-top: 11px
+            width: 136px
+            height: 28px
+            background-color: #ffec00
+            border: none
+            position: relative
+            cursor: pointer
+            font-size: 11px
+            line-height: 18px
+            font-weight: 700
+            text-transform: uppercase
+            color: #000000
+        &-btn::before
+            content: ""
+            position: absolute
+            width: 14px
+            height: 4px
+            top: -4px
+            left: 64px
+            background-image: url(../icons/treug.png)
+    &__call::before
+        content: ""
+        position: absolute
+        width: 17px
+        height: 26px
+        top: 4px
+        left: -37px
+        background-image: url(../icons/telefon.png)

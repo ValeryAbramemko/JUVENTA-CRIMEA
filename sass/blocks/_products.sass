@@ -1,0 +1,318 @@
+.products
+    padding: 30px 0 28px
+    &__inner
+    &__image
+        display: flex
+        width: 50%
+    &__image-previews
+        margin-right: 30px
+
+    &__image-prev
+        width: 80px
+        height: 80px
+        border: 2px solid #ededed
+        margin-bottom: 10px
+        cursor: pointer
+        position: relative
+        img
+            max-width: 100%
+            max-height: 100%
+            position: relative
+
+    &__image-prev.active
+        border-color: #ffec00
+    &__image-prev.active:before
+        position: absolute
+        content: ""
+        right: -7px
+        width: 0
+        height: 0
+        border-top: 10px solid transparent
+        border-left: 7px solid #ffffff
+        border-bottom: 10px solid transparent
+        z-index: 2
+        top: 0
+        bottom: 0
+        display: block
+        margin: auto
+    &__image-prev.active:after
+        position: absolute
+        content: ""
+        right: -9px
+        width: 0
+        top: 0
+        bottom: 0
+        height: 0
+        border-top: 10px solid transparent
+        border-left: 7px solid #ffec00
+        border-bottom: 10px solid transparent
+        margin: auto
+    &__image-big > div
+        padding: 20px
+        width: 100%
+        height: 100%
+        display: -ms-flexbox
+        display: flex
+        -ms-flex-align: center
+        align-items: center
+        -ms-flex-pack: center
+        justify-content: center
+
+    &__image-big
+        position: relative
+        width: 500px
+        height: 500px
+        background-color: #ffffff
+        border: 3px solid #ededed
+    &__image-big .zoom-img
+        padding: 10px
+        width: 40px
+        height: 40px
+        border: 2px solid #ededed
+        border-radius: 40px
+        position: absolute
+        right: 20px
+        top: 20px
+        align-items: center
+        justify-content: center
+
+    &__image-big .zoom-img:hover
+        background-color: #ffec00
+
+    &__inner
+        display: flex
+    &__blog
+        max-width: 50%
+        margin-left: 25px
+    &__title
+        padding-bottom: 30px
+        border-bottom: 2px solid #ededed
+        display: flex
+        &-one
+            position: relative
+            padding-left: 30px
+            color: #6e6e6e
+            font-size: 12px
+            line-height: 18px
+        &-one:before
+            content: ""
+            background: url(../icons/figura.png) no-repeat
+            width: 18px
+            height: 18px
+            position: absolute
+            left: 0
+            top: 0
+            white-space: nowrap
+        &-two
+            margin-top: 15px
+            font-size: 18px
+            line-height: 16px
+            font-weight: 700
+            text-transform: uppercase
+            color: #000000
+        &-three
+            display: flex
+            align-items: flex-end
+            flex-direction: column-reverse
+            position: relative
+            bottom: 0
+            right: -180px
+            width: 43px
+            height: 50px
+            background: url(../icons/plashka.png) no-repeat
+            align-items: center
+            justify-content: center
+            font-size: 12px
+            text-transform: uppercase
+            font-weight: bold
+    &__rating
+        padding: 0 0 30px 0
+        display: flex
+        justify-content: space-between
+        box-shadow: 0px 3px 0px 0px #ededed
+        &-feedback
+            margin-top: 30px
+            font-size: 12px
+            line-height: 16px
+            font-weight: 700
+            text-transform: uppercase
+            color: #000000
+            border-bottom: 2px dotted black
+            position: relative
+
+        &-feedback:before
+            content: ""
+            position: absolute
+            height: 18px
+            width: 18px
+            bottom: 0px
+            left: -30px
+            background-image: url(../icons/comment.svg)
+.rating-area
+    display: flex
+    flex-direction: row-reverse
+    justify-content: flex-end
+    position: relative
+.rating-text
+    position: absolute
+    left: 117px
+    bottom: 3px
+    font-family: Arial
+    font-size: 14px
+    line-height: 16px
+    font-weight: 400
+    text-transform: uppercase
+    color: #cccccc
+
+.rating-area:not(:checked) > input
+    display: none
+
+.rating-area:not(:checked) > label
+    float: right
+    width: 22px
+    padding: 0
+    cursor: pointer
+    font-size: 18px
+    line-height: 16px
+    font-weight: 400
+    color: lightgrey
+    text-shadow: 1px 1px #bbb
+    margin-top: 30px
+
+.rating-area:not(:checked) > label:before
+    content: '★'
+
+.rating-area > input:checked ~ label
+    color: gold
+    text-shadow: 1px 1px #c60
+
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label
+    color: gold
+
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label
+    color: gold
+    text-shadow: 1px 1px goldenrod
+
+.rate-area > label:active
+    position: relative
+
+.products__price
+    padding: 30px 0
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    &-basket
+        display: flex
+        justify-content: space-between
+        font-size: 16px
+        font-weight: bold
+        line-height: 20px
+        align-items: center
+        height: 46px
+        cursor: pointer
+        width: 200px
+        height: 46px
+        background-color: rgba(0,0,0,0.0)
+        border: 3px solid #ffec00
+        &_value
+            font-size: 20px
+            line-height: 16px
+            font-weight: 700
+            text-transform: uppercase
+            color: #000000
+            margin-left: 30px
+            span
+                font-size: 16px
+                text-transform: none
+
+    &-baskets
+        padding: 21px 21px
+        background-color: #ffec00
+        position: relative
+    &-baskets::after
+        content: ""
+        position: absolute
+        left: -4px
+        top: 0
+        bottom: 0
+        margin: auto
+        width: 0
+        height: 0
+        border-top: 10px solid transparent
+        border-bottom: 10px solid transparent
+        border-left: 8px solid #ffffff
+    &-baskets::before
+        content: ""
+        position: absolute
+        height: 18px
+        width: 22px
+        bottom: 13px
+        right: 7px
+
+        background-image: url(../icons/shopping.png)
+    &-choice
+        display: flex
+        position: relative
+        &_link
+            padding-left: 30px
+            line-height: 20px
+            white-space: nowrap
+            font-family: Arial
+            font-size: 12px
+            line-height: 16px
+            font-weight: 700
+            text-transform: uppercase
+            color: #000000
+            margin-left: 20px
+        &_link::after
+            content: ""
+            position: absolute
+            height: 18px
+            width: 22px
+            bottom: 1px
+            left: 20px
+            background-image: url(../img/basket/fa_heart_o.png)
+        &_link::before
+            content: ""
+            position: absolute
+            height: 21px
+            width: 22px
+            bottom: 0px
+            right: 72px
+            background-image: url(../img/basket/fa_files_o.png)
+
+.products__descr
+    font-size: 14px
+    line-height: 18px
+    font-weight: 400
+    color: #6e6e6e
+    &-text
+        margin-top: 30px
+    &-art
+        margin-top: 30px
+        font-size: 14px
+        line-height: 18px
+        font-weight: 700
+        color: #000000
+        span
+            font-weight: 400
+    &-link
+        font-size: 14px
+        line-height: 18px
+        font-weight: 700
+        color: #000000
+        border-bottom: 2px dotted #000
+    h3
+        margin-top: 24px
+        font-size: 14px
+        line-height: 18px
+        font-weight: 700
+        color: #010101
+        width: 254px
+        border-bottom: 2px dotted #000

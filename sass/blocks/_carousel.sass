@@ -1,0 +1,83 @@
+
+.carousel
+    display: flex
+.column
+    width: 80px
+    height: 80px
+    border: 2px solid #ededed
+    margin-bottom: 10px
+    cursor: pointer
+    position: relative
+    padding: 10px
+    outline: none
+    &.active
+        border-color: #ffec00
+        &:before
+            position: absolute
+            content: ""
+            right: -7px
+            width: 0
+            height: 0
+            border-top: 10px solid rgba(0,0,0,0)
+            border-left: 7px solid #fff
+            border-bottom: 10px solid rgba(0,0,0,0)
+            z-index: 2
+            top: 0
+            bottom: 0
+            display: block
+            margin: auto
+        &:after
+            position: absolute
+            content: ""
+            right: -9px
+            width: 0
+            top: 0
+            bottom: 0
+            height: 0
+            border-top: 10px solid transparent
+            border-left: 7px solid #ffec00
+            border-bottom: 10px solid transparent
+            margin: auto
+.column
+    &-img2
+        max-width: 85%
+    &-img3
+        margin-top: -7px
+        margin-left: 7px
+        height: 65px
+    &-img4
+        margin-top: 16px
+        max-height: 460px
+
+.row
+    display: flex
+    flex-direction: column
+    margin-right: 30px
+
+.container__photo
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    max-width: 500px
+    height: 500px
+    background-color: #ffffff
+    border: 3px solid #ededed
+    padding: 20px
+
+    img
+        max-width: 100%
+        max-height: 460px
+    & .zoom
+        padding: 10px
+        width: 40px
+        height: 40px
+        border: 2px solid #ededed
+        border-radius: 40px
+        position: absolute
+        right: 20px
+        top: 20px
+        align-items: center
+        justify-content: center
+    & .zoom:hover
+        background-color: #ffec00

@@ -1,0 +1,47 @@
+
+@import 'base/variables'
+@import 'base/mixins'
+
+*
+    font-family: Arial
+    margin: 0
+    padding: 0
+
+.body
+
+    overflow-x: hidden
+    min-width: 300px
+
+html,
+body
+    height: 100%
+
+.container
+    min-width: 320px
+    max-width: 1175px
+    margin: 0 auto
+    padding: 0 15px
+
+.wrapper
+    display: flex
+    flex-direction: column
+    min-height: 100%
+
+.catalog__menu-top--active
+    display: none
+    visibility: visible
+    opacity: 0
+    z-index: -2
+.menu__list-one--active
+    left: 0
+
+@import 'blocks/reset'
+@import 'blocks/nav'
+@import 'blocks/subheader'
+@import 'blocks/catalog'
+@import 'blocks/breadcrumbs'
+@import 'blocks/promo'
+@import 'blocks/products'
+@import 'blocks/tabs'
+@import 'blocks/carousel'
+@import 'blocks/media'

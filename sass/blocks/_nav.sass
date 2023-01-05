@@ -1,0 +1,93 @@
+.header
+
+    background-color: #ededed
+    box-shadow: 0px 1px 0px 0px #cccccc
+.sticky
+    position: fixed
+    top: 0
+    width: 100%
+    background-color: #000000
+
+#navbar
+    overflow: hidden
+    background-color: #ededed
+    position: fixed
+    top: 0
+    width: 100%
+    z-index: 99999
+
+.hamburger
+    display: none
+    cursor: pointer
+    position: absolute
+    left: 15px
+    top: 0
+
+.bar1, .bar2, .bar3
+    width: 30px
+    height: 3px
+    background-color: #333
+    margin: 5px 0
+    transition: 0.4s
+
+.change .bar1
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px)
+    transform: rotate(-45deg) translate(-8px, 10px)
+
+.change .bar2
+    opacity: 0
+
+.change .bar3
+    -webkit-transform: rotate(45deg) translate(-8px, -8px)
+    transform: rotate(45deg) translate(-2px, -4px)
+
+.change
+    position: fixed
+
+.menu
+    display: flex
+    justify-content: space-between
+    height: 35px
+
+    &__list
+        display: flex
+
+        &-item a
+            padding: 10px 10px 11px 11px
+            line-height: 33px
+        &-link
+
+            font-size: 13px
+            line-height: 16px
+            font-weight: 400
+            color: #000000
+            width: 100%
+            height: 100%
+
+        &-item a:hover
+            background-color: #f8f8f8
+            transition: .2s
+
+        &-link--active
+            color: #6e6e6e
+            position: relative
+
+        &-link--active:before
+            content: ""
+            position: absolute
+            width: 14px
+            height: 4px
+            top: 32px
+            right: calc( 100% - 50% - 4px)
+            background-image: url(../icons/treug_aktiv.png)
+
+        &-btn
+            font-size: 13px
+            line-height: 16px
+            font-weight: 400
+            color: #000000
+            border: none
+            width: 55px
+            height: 47px
+            margin-left: 19px
+            cursor: pointer

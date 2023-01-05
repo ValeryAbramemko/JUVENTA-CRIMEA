@@ -1,0 +1,180 @@
+@media screen and (max-width: 1024px)
+    .catalog
+        &__search-input
+            width: 300px
+            margin-left: 65px
+
+@media screen and (max-width: 980px)
+    .collection
+        &__item
+            width: 25%
+    .tab
+        width: 37%
+        font-size: 12px
+    .carousel
+        flex-direction: column-reverse
+    .row
+        flex-direction: row
+        justify-content: center
+        margin-top: 20px
+        gap: 20px
+    .products
+        &__title-three
+            right: -10px
+        &__price
+            flex-direction: column
+            align-items: flex-start
+            &-choice
+                margin-top: 20px
+    .carousel
+        max-width: 100%
+    .column.active:before
+        border-left: 10px solid transparent
+        border-bottom: 7px solid #ffffff
+        border-right: 10px solid transparent
+        top: -16px
+        right: 0
+        left: 0
+        bottom: inherit
+    .column.active:after
+        border-left: 10px solid transparent
+        border-bottom: 7px solid #ffec00
+        border-right: 10px solid transparent
+        top: -18px
+        right: 0
+        left: 0
+        bottom: inherit
+@media screen and (max-width: 800px)
+    .subheader
+        &__info
+            width: 249px
+        &__working
+            display: none
+        &__adres
+            width: 120px
+    .tab
+        width: 97.5%
+        font-size: 12px
+    .catalog__tab-btn
+        flex-direction: column
+    .tab:first-child
+        margin-left: 0
+        margin-top: 48px
+    .container__photo
+        max-width: 401px
+        height: 475px
+
+@media screen and (max-width: 768px)
+    .menu__list-link--active:before
+        content: none
+    .hamburger
+        display: block
+    .menu
+        display: flex
+        justify-content: flex-end
+
+        &__list-one
+            flex-direction: column
+            width: 300px
+            height: 700px
+            position: fixed
+            left: -400px
+            top: 35px
+            background-color: #ededed
+            align-items: center
+
+            &__item
+                text-align: center
+                display: block
+                width: 300px
+            &__item:first-child
+                padding-top: 50px
+            &__item a
+                transition: 0.3s
+                display: block
+                width: 100%
+                text-decoration: none
+
+                font-size: 18px
+                line-height: 18px
+            &__item:hover
+                border-bottom: 3px solid #000
+    .catalog
+        &__search-input
+            width: 200px
+            margin-left: 30px
+    .collection
+        &__item
+            width: 33.33%
+    .breadcrumbs
+        display: none
+    .rating-area
+        display: none
+    .products
+        &__rating
+            padding: 0 0 30px 37px
+
+@media screen and (max-width: 650px)
+    .subheader
+        &__adres
+            display: none
+    .catalog
+        &__search
+            display: none
+    .promo
+        &__title
+            line-height: 34px
+    .products
+        &__inner
+            flex-direction: column
+        &__image
+            width: 100%
+            justify-content: center
+        &__blog
+            max-width: 100%
+            margin-top: 30px
+
+@media screen and (max-width: 550px)
+    .collection
+        &__item
+            width: 50%
+        &-sub
+            flex-wrap: wrap
+    .tab
+        width: 95.5%
+    .tab:first-child
+        margin-left: 0
+        margin-top: 47px
+@media screen and (max-width: 500px)
+    .subheader
+        padding-top: 60px
+        &__inner
+            flex-direction: column
+            align-items: center
+        &__info-official
+            display: none
+        &__call
+            margin-top: 15px
+
+    .basket
+        justify-content: space-evenly
+        &__inner-sum
+            display: none
+    .tab
+        width: 93%
+
+    .column
+        height: 75px
+    .tab:first-child
+        margin-top: 107px
+    .basket
+        width: 134px
+        margin-right: 20px
+@media screen and (max-width: 400px)
+    .column
+        height: 57px
+        padding: 4px
+        &-img3
+            margin-top: -2px
+            margin-left: 0px
+            max-height: 100%

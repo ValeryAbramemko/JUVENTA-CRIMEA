@@ -1,0 +1,29 @@
+.breadcrumbs
+    background: rgba(#fff, .5)
+    padding: 24px 0 17px
+    position: relative
+
+    &__link
+        font-size: 14px
+        color: #6e6e6e
+        &--active
+            color: #cccccc
+
+    &__list
+        display: flex
+        height: 50px
+        overflow-x: auto
+        justify-content: flex-start
+        align-items: center
+
+    &__item:last-child::after
+        display: none
+
+    &__item
+        position: relative
+        padding-right: 20px
+
+    &__item::after
+        content: '>'
+        padding-left: 5px
+        position: absolute

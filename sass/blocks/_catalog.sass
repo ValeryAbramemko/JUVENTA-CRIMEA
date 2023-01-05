@@ -1,0 +1,87 @@
+.catalog
+    box-shadow: 0px 2px 0px 0px #ededed
+    &__inner
+        display: flex
+        justify-content: space-between
+    &__menu-btn
+        width: 140px
+        height: 48px
+        background-color: #ededed
+        cursor: pointer
+        text-align: center
+        line-height: 48px
+        position: relative
+    &__menu-btn:hover
+        background-color: #ffec00
+    &__menu-btn::before
+        content: ""
+        position: absolute
+        height: 18px
+        width: 18px
+        bottom: 13px
+        right: 15px
+        background-image: url(../icons/right.png)
+
+    &__search
+        position: relative
+        margin-top: 6px
+    &__search-input
+        border: 2px solid #ededed
+        padding: 6px 17px
+        margin-bottom: 6px
+        width: 400px
+        margin-left: 200px
+        position: relative
+        &::placeholder
+            font-family: Arial
+            font-size: 13px
+            line-height: 24px
+            font-weight: 400
+            color: #c4c4c4
+    &__search-btn
+        position: absolute
+        padding: 7px
+        top: 2px
+        right: 1px
+        border: none
+        background-color: #fff
+        cursor: pointer
+    &__search-input:hover
+        border-color: #ffec00
+    &__search-btn:hover
+        background-color: #ffec00
+
+.basket
+    display: flex
+    width: 324px
+
+    &__inner
+        margin-left: 15px
+        display: flex
+        align-items: center
+        justify-content: center
+        &-img
+            width: 22px
+            height: 22px
+        &-text
+            font-size: 12px
+            line-height: 22px
+            font-weight: 700
+            color: #000000
+            min-width: 22px
+            min-height: 22px
+            background-color: #ededed
+            border-radius: 50%
+            text-align: center
+            align-items: center
+            cursor: pointer
+        &-text:hover
+            background-color: #ffec00
+        &-sum
+            margin-left: 18px
+            font-size: 12px
+            line-height: 18px
+            font-weight: 400
+            color: #000000
+            span
+                font-weight: 700
