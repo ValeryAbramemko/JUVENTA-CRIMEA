@@ -56,6 +56,20 @@ btns.forEach(element => {
 
 
 
+const btnFav = document.querySelector('[data-action="favourites"]');
+const caunter = document.querySelector('[data-caunter]');
+const total = document.querySelector('[data-total]');
+const price = document.querySelector('[data-price]');
+
+btnFav.addEventListener('click', function () {
+
+    caunter.innerText = ++caunter.innerText;
+    total.innerText = parseInt(total.innerText) + parseInt(price.innerText);
+
+
+})
+
+
 
 
 
