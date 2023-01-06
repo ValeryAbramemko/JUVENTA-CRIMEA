@@ -77,7 +77,6 @@ btnFavourites.addEventListener('click', function () {
         caunterLike.innerText = 0;
         btnFavourites.innerText = 'В ИЗБРАННОЕ';
     }
-
 })
 
 btnBaskets.addEventListener('click', function () {
